@@ -1,0 +1,36 @@
+
+<div class="comments-container">
+
+  <div class="comment-form" *ngIf="lastname">
+    <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+    <form class="form" >
+      <div class="form-row">
+        <textarea class="input"  rows="3" placeholder="Ваш комментарий" required minlength="1" maxlength="500" [(ngModel)]="comment" name="comment"></textarea>
+      </div>
+
+      <div class="form-row">
+        <input type="submit" (click)="onComment()" value="Add Comment">
+      </div>
+
+    </form>
+  </div>
+
+    <ul *ngIf="comments[0]" id="comments-list" class="comments-list">
+    <li *ngFor="let comment of comments?.reverse(); index as i">
+        <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+        <!-- Contenedor del Comentario -->
+        <div class="comment-box">
+          <div class="comment-head">
+            <h6 class="comment-name"><a href="http://creaticode.com/blog">{{comment.id}}</a></h6>
+            <span>{{comment.date | date: 'medium'}}</span>
+          </div>
+          <div class="comment-content">
+            {{comment.text}}
+          </div>
+        </div>
+    </li>
+  </ul>
+</div>
+
+
+

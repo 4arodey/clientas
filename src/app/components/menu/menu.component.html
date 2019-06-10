@@ -1,0 +1,54 @@
+<nav class="background-image">
+</nav>
+<div [style.height.px]="49">
+<div id="content" (scroll)="scroll($event)">
+
+  <app-layout-item>
+    <div class="menu">
+      <div class="menu-logo">
+        <a routerLink="/">
+          <img src="https://res.cloudinary.com/dsocr550v/image/upload/c_scale,h_40/v1554208102/logo-indent_efobvh.png" alt="island">
+        </a>
+      </div>
+      <div class="menu-nav">
+        <app-menu-nav
+          [links]="['/about-game', '/how-to-play', '/play-online']"
+          [items]="['ОБ ИГРЕ', 'КАК ИГРАТЬ', 'ИГРАТЬ ОНЛАЙН']"
+          [icons]="['info-circle', 'question-circle', 'globe']"
+        ></app-menu-nav>
+      </div>
+      <div
+
+        class="menu-auth"
+      >
+        <span
+          *ngIf="token == undefined"
+        >
+          <app-menu-auth
+            [links]="['/login']"
+            [items]="['АВТОРИЗАЦИЯ']"
+          ></app-menu-auth>
+          <span class="diliver">|</span>
+          <app-menu-auth
+            [links]="['/signup']"
+            [items]="['РЕГИСТРАЦИЯ']"
+          ></app-menu-auth>
+        </span>
+        <span
+          *ngIf="token != undefined"
+        >
+          <app-menu-auth
+            [links]="['/profile']"
+            [items]="['ПРОФИЛЬ']"
+          ></app-menu-auth>
+          <span class="diliver">|</span>
+          <span style="color: #86CCC7;" (click)="logOut('token')">ВЫЙТИ</span>
+     </span>
+      </div>
+    </div>
+  </app-layout-item>
+
+</div>
+
+</div>
+

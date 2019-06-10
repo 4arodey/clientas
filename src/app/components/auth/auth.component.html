@@ -1,0 +1,56 @@
+<div class="login-box">
+  <div class="login-container">
+    <h1 class="title">АВТОРИЗИРОВАТЬСЯ</h1>
+    <form
+      [formGroup]="registerForm"
+      (ngSubmit)="onSubmit()"
+    >
+
+      <div class="form-group">
+        <input
+          placeholder="E-mail"
+          type="text"
+          [formControlName]="'email'"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted }"
+        />
+        <div class="error-container">
+          <div class="error-message"></div>
+          <div *ngIf="hasControlErrors('email')" class="invalid-feedback">
+            <div >Не верный E-mail</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input
+          placeholder="Пароль"
+          type="password"
+          [formControlName]="'password'"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted }"
+        />
+        <div class="error-container">
+          <div class="error-message"></div>
+          <div *ngIf="hasControlErrors('password')" class="invalid-feedback">
+            <div >Не правильный пароль</div>
+          </div>
+        </div>
+      </div>
+
+      <app-button
+        [disable]="registerForm.invalid && registerForm.touched"
+        [type]="'success'"
+        [text]="'ВОЙТИ'">
+      </app-button>
+
+    </form>
+  </div>
+  <div class="social-container">
+    <h1 class="title">СОЦИАЛЬНЫЕ СЕТИ</h1>
+    <app-button
+      [type]="'primary'"
+      [text]="'Facebook'">
+    </app-button>
+  </div>
+</div>

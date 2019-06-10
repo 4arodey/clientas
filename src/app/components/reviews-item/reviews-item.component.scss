@@ -1,0 +1,76 @@
+@import '../../../assets/styles/variables';
+
+$opacity_color: black;
+$news_description_height: 100%;
+$news_background_item_color: #a6e6e6;
+$news_background_text_color: white;
+$layout_item_max_width: 290px;
+$cloud_border_radius: 4px;
+
+.news-item-container {
+  display: block;
+  text-align: center;
+}
+
+.content-container {
+  background: $news_background_item_color;
+  height: 6rem;
+  color: $news_background_text_color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  max-width: $layout_item_max_width;
+  page-break-after: always;
+  word-wrap: break-word;
+
+}
+
+
+.link {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  color: $news_background_text_color;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.text {
+  padding: 1rem 1rem 1rem 1rem;
+  height: 5rem;
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+.speech-cloud {
+  position: relative;
+  border-radius: $cloud_border_radius;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+.speech-cloud:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-top-color: $news_background_item_color;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -90px;
+  margin-bottom: -25px;
+}
+
+.image-container {
+  width: 60%;
+  display:block; margin:1rem auto
+}
+

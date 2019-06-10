@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forgotten Island</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <style>
+    #topNubex {
+      position: fixed;
+      right: 45px;
+      bottom: 45px;
+    }
+  </style>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+      $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+          $('#topNubex').fadeIn();
+        } else {
+          $('#topNubex').fadeOut();
+        }
+      });
+      $('#topNubex').click(function() {
+        $('body,html').animate({scrollTop:0},700);
+      });
+    });
+  </script>
+</head>
+<body>
+<div id="topNubex"><img src="https://res.cloudinary.com/dsocr550v/image/upload/w_150,c_scale/v1560155749/Anonymous_arrow_next_e3k086.png" width="30px" height="30px" /></div>
+  <app-root></app-root>
+
+</body>
+</html>

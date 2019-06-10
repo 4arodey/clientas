@@ -1,0 +1,41 @@
+<app-layout-item
+  [paddingRight]="true"
+  [paddingLeft]="true"
+  [paddingTop]="true"
+  [paddingBottom]="true"
+>
+  <h1 class="title">
+    Руководство пользователя
+  </h1>
+  <div class="container">
+    <p class="text">
+      <app-list
+        [title]="'Управление роботом:'"
+        [items]="[
+      'Для передвижения используйте клавиши W и S.',
+      'Поворот - клавиши A и D.',
+      'Прыжок вперед - пробел.',
+      'Прыжок в высоту - W + пробел.',
+      'Сальто - клавиша E.',
+      'Удар - клавиша ПКМ.',
+      'Бег - Shift + W.',
+      'Присесть - C.',
+      'Ходьба в прсяде - зажмите С.'
+    ]"
+      >
+      </app-list>
+      <app-list
+        [title]="'Примечания:'"
+        [items]="[
+      'Внимательное читайте задания.',
+      'Будьте осторожны',
+      'Получайте удовольствие от игры.'
+    ]"
+      >
+      </app-list>
+    </p>
+    <div class="image">
+      <iframe width="320" height="270" [src]="url" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</app-layout-item>

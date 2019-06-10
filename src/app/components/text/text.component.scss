@@ -1,0 +1,22 @@
+@import '../../../assets/styles/variables';
+$text-color: $primary_text_color;
+$font_text: $font_size_secondary_variable;
+
+.text {
+  display: flex;
+  justify-content: center;
+  color: $text-color;
+  font-size: $font_text;
+}
+
+.paddingTop {
+  padding-top: 1.4rem;
+}
+
+.paddingBottom {
+  padding-bottom: 1.4rem;
+}
+
+.isNotPadding {
+  padding-top: 0;
+}

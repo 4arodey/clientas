@@ -1,0 +1,39 @@
+<footer class="footer-item">
+    <app-layout-item>
+      <div class="footer_menu">
+        <div class="menu">
+          <app-footer-menu
+            [title]="'СВЯЗАТЬСЯ С НАМИ'"
+            [items]="['VKontakte', 'Instagram']"
+            [links]="['https://vk.com', 'https://instagram.com']"
+          ></app-footer-menu>
+        </div>
+        <div class="menu">
+          <app-footer-menu
+            [title]="'ПОМОЩЬ'"
+            [links]="['/about-us']"
+            [items]="['О нас']"
+          ></app-footer-menu>
+        </div>
+        <div class="menu">
+          <app-footer-menu
+            [title]="'ИНФОРМАЦИЯ'"
+            [links]="['/map']"
+            [items]="['Карта']"
+          ></app-footer-menu>
+        </div>
+        <div class="menu">
+          <app-footer-menu
+            [title]="'СОТРУДНИЧЕСТВО'"
+            [links]="['/reklama']"
+            [items]="['Заказать рекламу']"
+          ></app-footer-menu>
+        </div>
+      </div>
+    </app-layout-item>
+    <app-copyright></app-copyright>
+</footer>
+
+
+
+

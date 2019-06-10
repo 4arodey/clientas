@@ -1,0 +1,106 @@
+<div class="login-box">
+  <div
+    *ngIf="isSuccessRegistered"
+    class="login-container"
+  >
+    <h1 class="title">РЕГИСТРАЦИЯ</h1>
+    <form
+      [formGroup]="registerForm"
+      (ngSubmit)="onSubmit()"
+    >
+
+      <div class="form-group">
+        <input
+          placeholder="E-mail"
+          type="text"
+          [formControlName]="'email'"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted }"
+        />
+        <div class="error-container">
+          <div class="error-message"></div>
+            <div *ngIf="hasEmailErrors" class="invalid-feedback">
+              <div >Не верный E-mail</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input
+          placeholder="Фамилия"
+          type="text"
+          [formControlName]="'lastname'"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted }"
+        />
+        <div class="error-container">
+          <div class="error-message"></div>
+            <div *ngIf="hasLastNameErrors" class="invalid-feedback">
+              <div >Не верная фамилия</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input
+          placeholder="Имя"
+          type="text"
+          [formControlName]="'firstname'"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted }"
+        />
+        <div class="error-container">
+          <div class="error-message"></div>
+            <div *ngIf="hasFirstNameErrors" class="invalid-feedback">
+              <div >Неверное имя</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input
+          placeholder="Пароль"
+          type="password"
+          [formControlName]="'password'"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted }"
+        />
+        <div class="error-container">
+          <div class="error-message"></div>
+            <div *ngIf="hasPasswordErrors" class="invalid-feedback">
+              <div >Не верный пароль</div>
+            </div>
+        </div>
+      </div>
+      <app-button
+        [disable]="registerForm.invalid && registerForm.touched"
+        [type]="'success'"
+        [text]="'ЗАРЕГИСТРИРОВАТЬСЯ'">
+      </app-button>
+
+    </form>
+  </div>
+  <div
+    *ngIf="isSuccessRegistered"
+    class="social-container"
+  >
+    <h1 class="title">СОЦИАЛЬНЫЕ СЕТИ</h1>
+    <app-button
+      [type]="'primary'"
+      [text]="'Facebook'">
+    </app-button>
+  </div>
+
+
+  <div *ngIf="!isSuccessRegistered" class="success-container">
+    <app-response-form
+      [imageUrl]="'https://baxov.net/sites/default/files/inline-images/2129c7a3-6e86-4c81-b650-8d4c215198e0.png'"
+      [title]="'Поздравляем!'"
+      [text]="'Вы успешно зарегистрировались! \nТеперь вы можете авторизироваться!'"
+      [routeLink]="'/login'"
+    >
+    </app-response-form>
+  </div>
+
+
+</div>

@@ -1,0 +1,39 @@
+<div class="background-container">
+  <app-layout-item
+    [paddingTop]="true"
+    [paddingBottom]="true"
+  >
+    <div class="blog-head text-center">
+      <h6>
+        <app-text
+          [paddingBottom]="true"
+          [text]="'ОТЗЫВЫ ПОЛЬЗОВАТЕЛЕЙ'"
+        >
+        </app-text>
+      </h6>
+    </div>
+
+    <div class="news-review-container">
+      <app-reviews-item
+        [title]="'Женя Усанов'"
+        [text]="'Это невероятная игра! Спасибо разработчикам за неё!!! Однажды ко мне зашёл друг, всё закончилось тем, что мы проиграли с ним весь день. Я очень рад!'"
+        [image_src]="'https://randomuser.me/api/portraits/men/60.jpg'">
+      </app-reviews-item>
+      <app-reviews-item
+        [title]="'Алина Северина'"
+        [text]="'Не знаю, кто что говорит, но это просто шедевр. Мы с подружками любим играть в Тайны забытого острова. И каждый следующий раз, когда я прохожу эту игру, я чувствую себя счастливой. Это, как раз и есть то, ради чего можно включать свой компьютер. Спасибо вам за игру! '"
+        [image_src]="'https://randomuser.me/api/portraits/women/32.jpg'">
+      </app-reviews-item>
+      <app-reviews-item
+        [title]="'Коля Белоус'"
+        [text]="'Раньше я не переносил браузерные игры, но когда моя жена играла в Тайны забытого острова, я решил так же попробовать. И что скажу, вы молодцы! Мне всё очень понравилось, такой сюжет, такие эффекты, это просто бомба!'"
+        [image_src]="'https://randomuser.me/api/portraits/men/42.jpg'">
+      </app-reviews-item>
+      <app-reviews-item
+        [title]="'Фенг Ли'"
+        [text]="'Люблю играть в компьютерные игры, люблю бродилки, но это что-то невероятное. Иногда в перерывах между работой захожу, чтобы поиграть. Мне всё нравится. Спасибо вам!'"
+        [image_src]="'https://randomuser.me/api/portraits/men/26.jpg'">
+      </app-reviews-item>
+    </div>
+  </app-layout-item>
+</div>

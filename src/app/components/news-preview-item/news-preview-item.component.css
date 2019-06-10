@@ -1,0 +1,39 @@
+.news-item-container {
+  position: relative;
+  border: 1px solid rgba(102, 102, 102, 0.8);
+  max-width: 250px;
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 4px; }
+
+.content-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: max-height 1s ease-out 0s;
+  max-height: 2rem;
+  padding: 0 10px;
+  background: rgba(102, 102, 102, 0.8); }
+  .content-container:hover {
+    max-height: 250px; }
+
+.link {
+  text-decoration: none;
+  box-sizing: border-box;
+  color: white; }
+
+.title {
+  max-width: 250px;
+  font-size: 2rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .title:hover {
+    text-decoration: #3fadee underline;
+    color: #3fadee; }
+
+.text {
+  max-width: 250px;
+  text-align: center; }
