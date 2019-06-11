@@ -1,29 +1,48 @@
-<app-layout-item *ngIf="token">
-  <app-static-news
-    [title]="'Заказать рекламу:'"
-    [imageUrl]="'https://vistanews.ru/uploads/posts/2018-03/1521744099_contextual-advertising-trust.png'"
-    [isBorder]="false"
-  >
-  <app-list
-    [title]="'Заказ рекламы'"
-    [items]="[
-    'Чтобы заказать рекламу напишите нам в скайпе - islandreclam с пометкой РЕКЛАМА!'
-  ]"
-  >
-  </app-list>
-  </app-static-news>
+
+
+
+<app-layout-item>
+  <ul class="parent">
+    <li class="column1">
+      <h1>
+        Играть онлайн:
+      </h1>
+      Чтобы заказать рекламу напишите нам в скайпе - <span style="font-family: Roboto">islandreclam</span> с пометкой РЕКЛАМА!
+
+    </li>
+    <li class="column2">
+
+    </li>
+    <li class="column3">
+      <div class="image">
+
+        <app-image
+          [src]="'http://samolets.com/wp-content/uploads/2013/11/onlinecheckin.jpg'"
+          [isBorder]="true"
+          [isZoom]="true"
+        >
+
+        </app-image>
+
+      </div>
+    </li>
+  </ul>
 </app-layout-item>
 
-<app-static-news
-  *ngIf="!token"
-  [title]="'Заказать рекламу:'"
-  [imageUrl]="'http://samolets.com/wp-content/uploads/2013/11/onlinecheckin.jpg'"
->
-  <app-list
-    [title]="'Внимание!!!'"
-    [items]="[
-    'Чтобы заказать рекламу, вам нужно авторизироваться или зарегистрироваться!'
-  ]"
-  >
-  </app-list>
-</app-static-news>
+
+
+
+<div style="display: flex; justify-content: center;" >
+  <app-layout-item *ngIf="token">
+    <iframe width="960" height="640"  [src]="url" frameborder="0" allowfullscreen></iframe>
+  </app-layout-item>
+</div>
+
+
+
+
+
+
+
+
+

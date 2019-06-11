@@ -1,15 +1,31 @@
-<app-static-news
-  [title]="'О разработчике'"
-  [imageUrl]="'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/50506344_109656516810231_6116060556517441536_n.jpg?_nc_cat=105&_nc_eui2=AeFxpuioi75F7Tk9ncZbHf0qgVjYtLvU1wky719MwgjoXxqLgtyM761gXD3paNn3Ii-_5kha7SvGVcOakOdhYT3RqYYKuYJFvlRVXySOE-ue3Q&_nc_ht=scontent-frx5-1.xx&oh=1387b75d7604cc2137cc691fc070f325&oe=5D774139'"
->
-  <app-list
-  [items]="[
-    'Имя: Олег',
-    'Фамилия: Карпач',
-    'Вуз: БГТУ',
-    'Факультет: Информационных технологий',
-    'Курс: 4-й'
-  ]"
-  >
-  </app-list>
-</app-static-news>
+
+<app-layout-item>
+  <ul class="parent">
+    <li class="column1">
+      <h1>
+        О разработчике
+      </h1>
+      <span>Имя:</span> Олег<br>
+      <span>Фамилия:</span> Карпач<br>
+      <span>Вуз:</span> БГТУ<br>
+      <span>Факультет:</span> Информационных технологий<br>
+      <span>Курс:</span> 4-й'<br>
+    </li>
+    <li class="column2">
+
+    </li>
+    <li class="column3">
+      <div class="image">
+        <app-image
+        [src]="'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/50506344_109656516810231_6116060556517441536_n.jpg?_nc_cat=105&_nc_eui2=AeFxpuioi75F7Tk9ncZbHf0qgVjYtLvU1wky719MwgjoXxqLgtyM761gXD3paNn3Ii-_5kha7SvGVcOakOdhYT3RqYYKuYJFvlRVXySOE-ue3Q&_nc_ht=scontent-frx5-1.xx&oh=1387b75d7604cc2137cc691fc070f325&oe=5D774139'"
+        [isBorder]="true"
+        >
+
+        </app-image>
+      </div>
+    </li>
+  </ul>
+</app-layout-item>
+
+
+

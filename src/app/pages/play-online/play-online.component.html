@@ -1,20 +1,42 @@
 
+
+
+<app-layout-item>
+  <ul class="parent">
+    <li class="column1">
+      <h1>
+        Играть онлайн:
+      </h1>
+      <h2>
+        Внимание!!!
+      </h2>
+      Чтобы играть, вам нужно авторизироваться или зарегистрироваться!
+
+    </li>
+    <li class="column2">
+
+    </li>
+    <li class="column3">
+      <div class="image">
+
+        <app-image
+        [src]="'http://samolets.com/wp-content/uploads/2013/11/onlinecheckin.jpg'"
+        [isBorder]="true"
+        [isZoom]="true"
+        >
+
+        </app-image>
+
+      </div>
+    </li>
+  </ul>
+</app-layout-item>
+
+
+
+
 <div style="display: flex; justify-content: center;" >
 <app-layout-item *ngIf="token">
   <iframe width="960" height="640"  [src]="url" frameborder="0" allowfullscreen></iframe>
 </app-layout-item>
 </div>
-
-<app-static-news
-  *ngIf="!token"
-  [title]="'Играть онлайн:'"
-  [imageUrl]="'http://samolets.com/wp-content/uploads/2013/11/onlinecheckin.jpg'"
->
-  <app-list
-    [title]="'Внимание!!!'"
-    [items]="[
-    'Чтобы играть, вам нужно авторизироваться или зарегистрироваться!'
-  ]"
-  >
-  </app-list>
-</app-static-news>
