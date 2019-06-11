@@ -1,41 +1,36 @@
-<app-layout-item
-  [paddingRight]="true"
-  [paddingLeft]="true"
-  [paddingTop]="true"
-  [paddingBottom]="true"
->
-  <h1 class="title">
-    Руководство пользователя
-  </h1>
-  <div class="container">
-    <p class="text">
-      <app-list
-        [title]="'Управление роботом:'"
-        [items]="[
-      'Для передвижения используйте клавиши W и S.',
-      'Поворот - клавиши A и D.',
-      'Прыжок вперед - пробел.',
-      'Прыжок в высоту - W + пробел.',
-      'Сальто - клавиша E.',
-      'Удар - клавиша ПКМ.',
-      'Бег - Shift + W.',
-      'Присесть - C.',
-      'Ходьба в прсяде - зажмите С.'
-    ]"
-      >
-      </app-list>
-      <app-list
-        [title]="'Примечания:'"
-        [items]="[
-      'Внимательное читайте задания.',
-      'Будьте осторожны',
-      'Получайте удовольствие от игры.'
-    ]"
-      >
-      </app-list>
-    </p>
-    <div class="image">
-      <iframe width="320" height="270" [src]="url" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
+
+<app-layout-item>
+  <ul class="parent">
+    <li class="column1">
+      <h1>
+        Руководство пользователя
+      </h1>
+      <h2>
+        Управление роботом:
+      </h2>
+      Для передвижения используйте клавиши <span style="font-family: Roboto; color: #333333">W</span> и <span style="font-family: Roboto; color: #333333">S</span>.<br>
+      Поворот - клавиши <span style="font-family: Roboto; color: #333333">A</span> и <span style="font-family: Roboto; color: #333333">D</span>.<br>
+      Прыжок вперед - пробел.<br>
+      Прыжок в высоту - <span style="font-family: Roboto; color: #333333">W</span> + <span style="font-family: Roboto; color: #333333">пробел</span>.<br>
+      Сальто - клавиша <span style="font-family: Roboto; color: #333333">у</span>.<br>
+      Удар - клавиша <span style="font-family: Roboto; color: #333333">ПКМ</span>.<br>
+      Бег - <span style="font-family: Roboto; color: #333333">Shift</span> + <span style="font-family: Roboto; color: #333333">W</span>.<br>
+      Присесть - <span style="font-family: Roboto; color: #333333">C</span>.<br>
+      Ходьба в прсяде - зажмите <span style="font-family: Roboto; color: #333333">C</span>.<br>
+      <h2>
+        Примечания:
+      </h2>
+      Внимательное читайте задания.<br>
+      Будьте осторожны<br>
+      Получайте удовольствие от игры<br>
+    </li>
+    <li class="column2">
+      <img src='https://media0.giphy.com/media/TzHoeDza0h6CY/giphy.gif?cid=790b76115cff02b45530736f369be4b7&rid=giphy.gif' alt="">
+    </li>
+    <li class="column3">
+      <div class="image">
+        <iframe width="530" height="340" [src]="url" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </li>
+  </ul>
 </app-layout-item>
