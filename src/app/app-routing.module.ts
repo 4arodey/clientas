@@ -14,19 +14,31 @@ import {LoginComponent} from './pages/login/login.component';
 import {ProfileComponent} from './pages/profile/profile.component';
 import {ReclamaComponent} from './pages/reclama/reclama.component';
 import { News1Component } from './pages/news1/news1.component';
+import { News2Component } from './pages/news2/news2.component';
+import { News3Component } from './pages/news3/news3.component';
+import { News4Component } from './pages/news4/news4.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
   },
-  {
-    path: 'news/:id',
-    component: NewsComponent
-  },
+
   {
     path: 'news/1',
     component: News1Component
+  },
+  {
+    path: 'news/2',
+    component: News2Component
+  },
+  {
+    path: 'news/3',
+    component: News3Component
+  },
+  {
+    path: 'news/4',
+    component: News4Component
   },
   {
     path: 'about-game',

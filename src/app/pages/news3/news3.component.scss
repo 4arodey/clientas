@@ -1,0 +1,79 @@
+@import '../../../assets/styles/variables';
+$min_width_image: 200px;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.image {
+  flex:1;
+  min-width: $min_width_image;
+}
+
+.text {
+  flex:2;
+}
+
+
+//---------------------------------------------
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5%;
+  font-family: 'Roboto Condensed';
+}
+.column1 {
+  flex: 1;
+  font-size: 1.4rem;
+  color: $text_color_news;
+  h1 {
+    font-size: 2.5rem;
+    color: $main_color;
+    padding-bottom: 10px;
+    font-family: Roboto;
+  }
+  h2 {
+    color: $tertiary_text_color;
+    padding-bottom: 5px;
+    font-family: Roboto;
+  }
+}
+.column2 {
+  flex: 4;
+  font-size: 1.4rem;
+  color: $text_color_news;
+  h1 {
+    font-size: 2.5rem;
+    color: $main_color;
+    padding-bottom: 10px;
+    font-family: Roboto;
+  }
+  h2 {
+    color: $tertiary_text_color;
+    padding-bottom: 5px;
+    font-family: Roboto;
+  }
+}
+.column3 {
+  flex: 1;
+  font-size: 1.4rem;
+  color: $text_color_news;
+  h1 {
+    font-size: 2.5rem;
+    color: $main_color;
+    padding-bottom: 10px;
+    font-family: Roboto;
+  }
+  h2 {
+    color: $tertiary_text_color;
+    padding-bottom: 5px;
+    font-family: Roboto;
+  }
+}

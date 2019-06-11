@@ -1,3 +1,37 @@
-<p>
-  news4 works!
-</p>
+<app-layout-item>
+  <ul class="parent">
+    <li class="column1">
+    </li>
+    <li class="column2">
+      <h1>
+        Тайны забытого острова
+      </h1>
+      <h2>
+        Что же всё-таки такое забытый остров?
+      </h2>
+      На дворе 2150 год, на планете Земля роль людей уже стали играть роботы. Однаждый молодной робот по имени Вердер решил отправился в кругосветное
+      путешествие на корабле, но из-за погодных аномалий корабль терпит куршение. И Вердер оказывается один, на Богом забытом острове, среди остатков мусора
+      и одиноких пальм.
+      <br><br>
+      <app-image
+        [src]="'https://res.cloudinary.com/dsocr550v/image/upload/v1560229090/4_sixldq.png'"
+        [isBorder]="true"
+        [isZoom]="true"
+      >
+      </app-image>
+      <br><br>
+      <h2>
+        КОММЕНТАРИИ:
+      </h2>
+    </li>
+    <li class="column3">
+
+
+    </li>
+    <br><br>
+
+  </ul>
+  <app-comments></app-comments>
+  <app-news-rating>
+  </app-news-rating>
+</app-layout-item>

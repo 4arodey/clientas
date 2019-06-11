@@ -1,3 +1,39 @@
-<p>
-  news3 works!
-</p>
+<app-layout-item>
+  <ul class="parent">
+    <li class="column1">
+    </li>
+    <li class="column2">
+      <h1>
+        Карты
+      </h1>
+      <h2>
+        Как добраться до острова?
+      </h2>
+      В самом начале игры мы появляемся в открытом океане. Игроку предложено найти остров,
+      однако эта задача не совсем простая для потенциального пользователся. Но секрет заключается в том,
+      что нужно просто плыть прямо и тогда вы наёдёте остров.
+      <br><br>
+      <app-image
+        [src]="'https://res.cloudinary.com/dsocr550v/image/upload/v1560229086/6_hlgpik.png'"
+        [isBorder]="true"
+        [isZoom]="true"
+      >
+      </app-image>
+      Желаем удачи Вам в своих начинаниях...
+      После прочтения данной статьи вы узнали что же такое карта.
+      <br><br>
+      <h2>
+        КОММЕНТАРИИ:
+      </h2>
+    </li>
+    <li class="column3">
+
+
+    </li>
+    <br><br>
+
+  </ul>
+  <app-comments></app-comments>
+  <app-news-rating>
+  </app-news-rating>
+</app-layout-item>
