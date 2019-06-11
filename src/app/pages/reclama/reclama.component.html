@@ -1,13 +1,10 @@
-
-
-
 <app-layout-item>
-  <ul class="parent">
+  <ul class="parent" *ngIf="!token">
     <li class="column1">
       <h1>
-        Играть онлайн:
+        Заказать рекламу
       </h1>
-      Чтобы заказать рекламу напишите нам в скайпе - <span style="font-family: Roboto">islandreclam</span> с пометкой РЕКЛАМА!
+      Чтобы заказать рекламу вам нужно авторизироваться!
 
     </li>
     <li class="column2">
@@ -29,20 +26,30 @@
   </ul>
 </app-layout-item>
 
+<app-layout-item>
+  <ul class="parent" *ngIf="token">
+    <li class="column1">
+      <h1>
+        Как заказать рекламу?
+      </h1>
+      Чтобы заказать рекламу напишите нам в скайпе - <span style="font-family: Roboto">islandreclam</span> с пометкой РЕКЛАМА!
 
+    </li>
+    <li class="column2">
 
+    </li>
+    <li class="column3">
+      <div class="image">
 
-<div style="display: flex; justify-content: center;" >
-  <app-layout-item *ngIf="token">
-    <iframe width="960" height="640"  [src]="url" frameborder="0" allowfullscreen></iframe>
-  </app-layout-item>
-</div>
+        <app-image
+          [src]="'https://pp.userapi.com/c849336/v849336867/7cf5e/WGPwbPgQRXE.jpg'"
+          [isBorder]="true"
+          [isZoom]="true"
+        >
 
+        </app-image>
 
-
-
-
-
-
-
-
+      </div>
+    </li>
+  </ul>
+</app-layout-item>
