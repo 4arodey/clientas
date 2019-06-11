@@ -1,6 +1,6 @@
 @import '../../../assets/styles/variables';
 $line_color: $quaternary_color;
-$background_color: $primary_color;
+$background_color: $secondary_text_color;
 $status_color: $main_color;
 $image_width: 200px;
 $content_height: 650px;
@@ -49,7 +49,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #3498db;
+  color: $background_color;
 }
 .content-profile-page {
   margin: 1em auto;
@@ -89,8 +89,8 @@ a {
   font-weight: bold;
   cursor: pointer;
   width: 7em;
-  background: #3498db;
-  border: 1px solid #2487c9;
+  background: $tertiary_text_color;
+  border: 1px solid $tertiary_text_color;
   color: #fff;
   outline: none;
   border-radius: 0 .6em .6em 0;
@@ -98,9 +98,9 @@ a {
 }
 
 .profile-user-page button:hover {
-  background: #51a7e0;
+  background: $secondary_text_color;
   transition: background .2s ease-in-out;
-  border: 1px solid #2487c9;
+  border: 1px solid $tertiary_text_color;
 }
 .profile-user-page .user-profile-data, .profile-user-page .description-profile {
   text-align: center;
