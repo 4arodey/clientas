@@ -29,7 +29,12 @@ $min_width_image: 200px;
   padding-top: 5%;
   font-family: 'Roboto Condensed';
 }
+.column0{
+  flex:2;
+}
 .column1 {
+
+  justify-content: flex-end;
   flex: 4;
   font-size: 1.4rem;
   color: $text_color_news;
@@ -46,6 +51,7 @@ $min_width_image: 200px;
   }
 }
 .column2 {
+
   padding-top: 10%;
   flex: 1;
 }
