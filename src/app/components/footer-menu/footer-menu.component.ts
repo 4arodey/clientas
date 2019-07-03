@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./footer-menu.component.scss']
 })
 export class FooterMenuComponent {
-  @Input() title = 'Menu';
   @Input() items = [];
   @Input() links = [];
 

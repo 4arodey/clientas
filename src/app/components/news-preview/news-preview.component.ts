@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class NewsPreviewComponent {
   title: object = [
     'Предметы',
-    'Лабиринт',
+    'Лаберинт',
     'Карты',
     'Остров'
   ];
